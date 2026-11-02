@@ -1,6 +1,6 @@
-# ASCII Tank Game
+# x86 Tank Game and Logisim 8-bit Computer
 
-> **Note:** This repository also contains an 8-bit computer design created with Logisim. You can find the related files in the corresponding folder.
+> **Note:** This repository also contains an 8-bit computer design created with Logisim. You can find the related files in the `8-bit-computer/` folder.
 
 It is a retro-style tank game written in x86 Assembly and running on **emu8086**. All graphical output, timing, and input operations are performed directly through **BIOS/DOS interrupts** without using any library or operating system service. The game is compiled into a single `.COM` file and runs in 80×25 text mode.
 
@@ -296,8 +296,13 @@ All drawing operations are performed through **BIOS INT 10h**; DOS write functio
 ## File Structure
 
 ```
-ascii_tank_game.asm   ← Single source file containing all code, data, and text strings
-README.md
+├── tank-game/
+│   └── ascii_tank_game.asm   ← Single source file containing all code, data, and text strings
+├── 8-bit-computer/
+│   ├── 8-bit-computer.circ   ← Logisim circuit file
+│   └── assets/
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -311,7 +316,7 @@ README.md
 ### Steps
 
 1. Open **emu8086**.
-2. Select **Open** → `ascii_tank_game.asm`.
+2. Select **Open** → `tank-game/ascii_tank_game.asm`.
 3. Click the **Compile** button or press `F5`.
 4. Click the **Run** button — the emulator opens the virtual screen window.
 5. Press **Enter** on the intro screen.
